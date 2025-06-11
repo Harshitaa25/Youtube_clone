@@ -4,9 +4,11 @@
   "description": "my first backend project",
   "type": "module",
   "main": "index.js",
-  "scripts": {
-    "dev": "nodemon src/index.js"
-  },
+"scripts": {
+  "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+}
+
+,
   "keywords": [
     "javascript",
     "backend",
@@ -15,6 +17,12 @@
   "author": "Harshita Mahakalkar",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "prettier": "^3.5.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1"
   }
 }
